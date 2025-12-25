@@ -2,7 +2,7 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "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"; // Your OpenAI API key here
+const OPENAI_API_KEY = "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"; // Your OpenAI API key here
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -42,7 +42,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
     });
 
     // Throw an error message if the API response is unsuccessful
-    if(!response.ok) throw new Error("Failed to generate AI images. Make sure your API key is valid.");
+    if(!response.ok) throw new Error("Failed to generate AI images. Make sure are you SK KHORRUM ");
 
     const { data } = await response.json(); // Get data from the response
     updateImageCard([...data]);
@@ -83,3 +83,4 @@ const handleImageGeneration = (e) => {
 }
 
 generateForm.addEventListener("submit", handleImageGeneration);
+
